@@ -1,9 +1,11 @@
 if __name__ == "__main__":
   # Python Lists
+
   a = ["foo", "bar", "baz", "qux"]
   print(a)
 
   # Lists Are Ordered
+
   a = ["foo", "bar", "baz", "qux"]
   b = ["baz", "qux", "bar", "foo"]
   print(a)
@@ -13,6 +15,7 @@ if __name__ == "__main__":
   print([1, 2, 3, 4] == [4, 1, 3, 2])
 
   # Lists Can Contain Arbitrary Objects
+
   a = [2, 4, 6, 8]
   print(a)
 
@@ -54,3 +57,55 @@ if __name__ == "__main__":
 
   a = ["bark", "meow", "woof", "bark", "cheep", "bark"]
   print(a)
+
+  # List Elements Can Be Accessed by Index
+
+  a = ["foo", "bar", "baz", "quz", "quux", "corge"]
+  print(a)
+  print(a[0])
+  print(a[2])
+  print(a[5])
+  print(a[-1])
+  print(a[-2])
+  print(a[-5])
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a[2:5])
+  print(a[-5:-2])
+  print(a[1:4])
+  print(a[-5:-2] == a[1:4])
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a[:4], a[0:4])
+  print(a[2:], a[2: len(a)])
+  print(a[:4] + a[4:])
+  print(a[:4] + a[4:] == a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a[0:6:2])
+  print(a[1:6:2])
+  print(a[6:0:-2])
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a[::-1])
+
+  s = "foobar"
+  print(s[:])
+  print(s[:] is s)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a[:])
+  print(a[:] is a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print("qux" in a)
+  print("thud" not in a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a + ["grault", "garply"])
+  print(a * 2)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(len(a))
+  print(min(a))
+  print(max(a))
