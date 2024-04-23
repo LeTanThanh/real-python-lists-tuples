@@ -316,3 +316,33 @@ if __name__ == "__main__":
 
   del a[0]
   print(a)
+
+  # Python Tuples
+
+  # Defining and Using Tuples
+
+  t = ("foo", "bar", "baz", "qux", "quux", "corge")
+  print(t)
+  print(t[0])
+  print(t[-1])
+  print(t[1:2])
+  print(t[::-1])
+
+  # t[2] = "Bark!"
+  # TypeError
+
+  t = ()
+  print(t)
+  print(type(t))
+
+  t = (1, 2)
+  print(t)
+  print(type(t))
+
+  t = (1, 2, 3, 4, 5)
+  print(t)
+  print(type(t))
+
+  t = (2,)
+  print(t)
+  print(type(t))
