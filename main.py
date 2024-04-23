@@ -203,3 +203,53 @@ if __name__ == "__main__":
   print(a)
   a += ["corge"]
   print(a)
+
+  # Methods That Modify a List
+
+  s = "foobar"
+  t = s.upper()
+  print(s, t)
+
+  ## a.append(<obj>)
+
+  """
+  Appends an object to a list.
+
+  a.append(<obj>) appends object <obj> to the end of list a:
+  """
+
+  a = ["a", "b"]
+  print(a)
+  a.append(123)
+  print(a)
+
+  a = ["a", "b"]
+  print(a)
+  a += [1, 2, 3]
+  print(a)
+
+  a = ["a", "b"]
+  print(a)
+  a.append([1, 2, 3])
+  print(a)
+
+  a = ["a", "b"]
+  print(a)
+  a.append("foo")
+  print(a)
+
+  ## a.extend(<iterable>)
+
+  """
+  Extends a list which the objects from an iterable.
+  """
+
+  a = ["a", "b"]
+  print(a)
+  a.extend([1, 2, 3])
+  print(a)
+
+  a = ["a", "b"]
+  print(a)
+  a += [1, 2, 3]
+  print(a)
