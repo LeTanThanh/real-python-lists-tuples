@@ -173,3 +173,33 @@ if __name__ == "__main__":
   print(a)
   del a[1:5]
   print(a)
+
+  # Prepending or Appending Items to a List
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a += ["grault", "garply"]
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a = [10, 20] + a
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  # a += 20
+  # TypeError
+
+  a += [20]
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux"]
+  print(a)
+  a += "corge"
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux"]
+  print(a)
+  a += ["corge"]
+  print(a)
