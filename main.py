@@ -253,3 +253,48 @@ if __name__ == "__main__":
   print(a)
   a += [1, 2, 3]
   print(a)
+
+  ## a.insert(<index>, <obj>)
+
+  """
+  Inserts an object into a list.
+  """
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a.insert(3, 3.15159)
+  print(a)
+
+  ## a.remove(<obj>)
+
+  """
+  Removes an object from a list.
+  """
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a.remove("baz")
+  print(a)
+
+  # a.remove("Bark!")
+  # ValueError
+
+  ## a.pop(index = -1)
+
+  """
+  Removes an element from a list.
+  """
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a.pop()
+  print(a)
+  a.pop()
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a.pop(1)
+  print(a)
+  a.pop(-3)
+  print(a)
