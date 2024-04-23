@@ -346,3 +346,63 @@ if __name__ == "__main__":
   t = (2,)
   print(t)
   print(type(t))
+
+  # Tuple Assignment, Packing, and Unpacking
+
+  t = ("foo", "bar", "baz", "qux")
+  print(t)
+  print(t[0])
+  print(t[-1])
+
+  (s1, s2, s3, s4) = t
+  print(s1)
+  print(s2)
+  print(s3)
+  print(s4)
+
+  # (s1, s2, s3) = t
+  # ValueError
+
+  (s1, s2, s3, s4) = ("foo", "bar", "baz", "qux")
+  print(s1)
+  print(s2)
+  print(s3)
+  print(s4)
+
+  # (s1, s2, s3, s4, s5) = ("foo", "bar", "baz", "qux")
+  # ValueError
+
+  t = 1, 2, 3
+  print(t)
+  print(type(t))
+
+  x1, x2, x3 = t
+  print(x1)
+  print(x2)
+  print(x3)
+
+  x1, x2, x3 = 4, 5, 6
+  print(x1)
+  print(x2)
+  print(x3)
+
+  t = 2,
+  print(t)
+  print(type(t))
+
+  a = "foo"
+  b = "bar"
+  print((a, b))
+
+  # We need to define a temp variable to accomplish the swap.
+  temp = a
+  a = b
+  b = temp
+  print((a, b))
+
+  a = "foo"
+  b = "bar"
+  print((a, b))
+
+  a, b = b, a
+  print((a, b))
