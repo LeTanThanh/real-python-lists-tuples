@@ -117,3 +117,21 @@ if __name__ == "__main__":
   print(x[0], x[2], x[4])
   print(x[1])
   print(x[3])
+
+  # Modifying a Single List Value
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a[2] = 10
+  print(a)
+  a[-1] = 20
+  print(a)
+
+  # s = "foobarbaz"
+  # s[2] = "x"
+  # TypeError
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  del a[3]
+  print(a)
