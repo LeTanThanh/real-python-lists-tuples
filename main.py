@@ -109,3 +109,11 @@ if __name__ == "__main__":
   print(len(a))
   print(min(a))
   print(max(a))
+
+  # Lists Can Be Nested
+
+  x = ["a", ["bb", ["ccc", "ddd"], "ee", "ff"], "g", ["hh", "ii"], "j"]
+  print(x)
+  print(x[0], x[2], x[4])
+  print(x[1])
+  print(x[3])
