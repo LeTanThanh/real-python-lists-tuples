@@ -135,3 +135,41 @@ if __name__ == "__main__":
   print(a)
   del a[3]
   print(a)
+
+  # Modifying Multiple List Values
+
+  """
+  a[m:n] = <iterable>
+  """
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a[1:4] = [1.1, 2.2, 3.3, 4.4, 5.5]
+  print(a)
+  a[1:6] = ["Bark!"]
+  print(a)
+
+  a = [1, 2, 3]
+  print(a)
+  a[1:2] = [2.1, 2.2, 2.3]
+  print(a)
+
+  a = [1, 2, 3]
+  print(a)
+  a[1] = [2.1, 2.2, 2.3]
+  print(a)
+
+  a = [1, 2, 7, 8]
+  print(a)
+  a[2:2] = [3, 4, 5, 6]
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a[1:5] = []
+  print(a)
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  del a[1:5]
+  print(a)
