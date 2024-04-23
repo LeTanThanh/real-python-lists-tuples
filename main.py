@@ -298,3 +298,21 @@ if __name__ == "__main__":
   print(a)
   a.pop(-3)
   print(a)
+
+  # Lists Are Dynamic
+
+  a = ["foo", "bar", "baz", "qux", "quux", "corge"]
+  print(a)
+  a[2:2] = [1, 2, 3]
+  print(a)
+  a += [3.14159]
+  print(a)
+
+  a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+  print(a)
+
+  a[2:3] = []
+  print(a)
+
+  del a[0]
+  print(a)
